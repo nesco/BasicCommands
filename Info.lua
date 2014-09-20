@@ -5,11 +5,11 @@
  g_PluginInfo = 
 {
  
- 		Name = "Commands"
- 		Version = "1"
- 		Date = "2014-09-20"
- 		SourceLocation = ""
- 		Description = "[[Set of commands]]"
+ 		Name = "Commands",
+ 		Version = "1",
+ 		Date = "2014-09-20",
+ 		SourceLocation = "",
+ 		Description = "[[Set of commands]]",
  		
  		Commands =
  		{
