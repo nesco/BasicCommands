@@ -21,7 +21,7 @@
  		              
  		        },
  		        
- 		        ["/thunder"] =
+ 		        ["/thunderbolt"] =
  		        {
  		              Alias = "/strike",
  		              Permission = "bc.thunderbolt",
