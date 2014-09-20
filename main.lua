@@ -5,8 +5,8 @@
 
 
 function Initialize(Plugin)
-  Plugin:SetName("Commands") 
-  Plugin:SetVersion(1)
+    Plugin:SetName("Commands") 
+ 		Plugin:SetVersion(1)
  		
-  return true
- end
+ 		return true
+end
