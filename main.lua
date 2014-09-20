@@ -16,3 +16,7 @@ function Initialize(Plugin)
  		
  	return true
 end
+
+function OnDisable()
+	LOG( "Disabled BasicCommands!" )
+end
