@@ -13,11 +13,11 @@
  		
  		Commands =
  		{
- 		        ["/fireball"] =
+ 		        ["/throw"] =
  		        {
- 		              Permission = "bc.fireball",
- 		              Handler = HandleFireballCommand,
- 		              HelpString = " ~ Shoot a fireball"
+ 		              Permission = "bc.throw",
+ 		              Handler = HandleThrowCommand,
+ 		              HelpString = " ~ Shoot a projectile"
  		              
  		        },
  		        
