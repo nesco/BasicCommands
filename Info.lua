@@ -1,11 +1,10 @@
+-- Info.lua
 
- -- Info.lua
- 
- -- Implements the g_PluginInfo standard plugin description
+-- Implements the g_PluginInfo standard plugin description
  
  g_PluginInfo = 
- {
-  
+{
+ 
  		Name = "Commands"
  		Version = "1"
  		Date"2014-09-20"
@@ -42,4 +41,4 @@
 
  		}
  
- }
+}
