@@ -7,8 +7,12 @@
 function Initialize(Plugin)
  	-- Load the InfoReg shared library:
 	dofile(cPluginManager:GetPluginsPath() .. "/InfoReg.lua")
- 		Plugin:SetName("Commands") 
- 		Plugin:SetVersion(1)
+	
+ 	Plugin:SetName(g_PluginInfo.Name) 
+ 	Plugin:SetVersion(g_PluginInfo.Version)
+ 	
+ 	-- Bind all the commands:
+	RegisterPluginInfoCommands();
  		
- 		return true
+ 	return true
 end
