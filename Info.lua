@@ -32,7 +32,7 @@
  		        
  		        ["/kick-all"] =
  		        {
- 		              Alias = "/kicka",
+ 		              Alias = "/kickall",
  		              Permission = "bc.kickall",
  		              Handler = HandlerKickAllCommand,
  		              HelpString = " ~ Kick all the players",
