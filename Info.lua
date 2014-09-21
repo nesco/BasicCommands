@@ -25,7 +25,7 @@
  		        {
  		              Alias = "/strike",
  		              Permission = "bc.thunderbolt",
- 		              Handler = HandlerThunderboltCommand,
+ 		              Handler = HandleThunderboltCommand,
  		              HelpString = " ~ Create a thunderbolt",
  		              
  		        },
@@ -34,7 +34,7 @@
  		        {
  		              Alias = "/kickall",
  		              Permission = "bc.kickall",
- 		              Handler = HandlerKickAllCommand,
+ 		              Handler = HandleKickAllCommand,
  		              HelpString = " ~ Kick all the players",
  		              
  		        },
