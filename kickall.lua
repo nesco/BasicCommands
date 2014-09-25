@@ -1,15 +1,9 @@
 function HandleKickAllCommand(Split, Player)
 
-		local kickPlayer = function(OtherPlayer)
-				
-				local str = "/kick " .. OtherPlayer:GetName()
-				
-				if (OtherPlayer:GetName() ~= Player:GetName()) then
-						cRoot:Get():GetPluginManager():ExecuteCommand(Player, str)
-				end
+		local CommandPrefix = "/kick"
+		local CommandSuffix = ""
 		
-		end
-		cRoot:Get():ForEachPlayer(kickPlayer)
+		ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 		
 		return true;
 end
