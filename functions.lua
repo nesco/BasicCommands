@@ -31,10 +31,15 @@ function Throw(Player, ProjectileName, Speed)
 		return Player:GetWorld():CreateProjectile(Pos.x, Pos.y, Pos.z, Projectile, Player, Item, Direction)
 end
 
-function ExecuteForAll(CommandPrefix, Player, CommandSuffix)
+function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 		local ExecuteCommand = function(OtherPlayer)
-					
-					local FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName .. " " .. CommandSuffix
+					local FinalCommand = "" 
+								
+					if (CommandSuffix ~= "") then
+						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName .. " " .. CommandSuffix
+					else
+						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName
+					end
 					
 					if (OtherPlayer:GetName() ~= Player:GetName()) then
 								cRoot:GetPluginManager():ExecuteCommand(Player, FinalCommand)
