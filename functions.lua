@@ -48,10 +48,10 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 					end
 					
 					if (OtherPlayer:GetName() ~= Player:GetName()) then
-								cRoot:GetPluginManager():ExecuteCommand(Player, FinalCommand)
+								cRoot:Get():GetPluginManager():ExecuteCommand(Player, FinalCommand)
 					end
 		end
-		cRoot:ForEachPlayer(ExecuteCommand)
+		cRoot:Get():ForEachPlayer(ExecuteCommand)
 		
 		return true;
 end
