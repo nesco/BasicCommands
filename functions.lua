@@ -14,7 +14,7 @@ end
 function Strike(Name)
 		if not Player:GetWorld():DoWithPlayer(Name,
 				function(Player)
-						Player:GetWorld:GetWorld():CastThunderbolt(Player:GetPosX(), Player:GetPosY(), Player:GetPosZ())
+						Player:GetWorld():CastThunderbolt(Player:GetPosX(), Player:GetPosY(), Player:GetPosZ())
 				end
 		) then
 				return false
@@ -42,9 +42,9 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 					local FinalCommand = "" 
 								
 					if (CommandSuffix ~= "") then
-						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName .. " " .. CommandSuffix
+						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName() .. " " .. CommandSuffix
 					else
-						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName
+						FinalCommand = CommandPrefix .. " " .. OtherPlayer:GetName()
 					end
 					
 					if (OtherPlayer:GetName() ~= Player:GetName()) then
@@ -66,7 +66,7 @@ local ProjectileTable =
 			["fireball"]		= 63,
 			["firecharge"]		= 64,
 			["enderpearl"] 		= 65,
-			["skull"]		= 66
+			["skull"]		= 66,
 			["splashpotion"]	= 73,
 			["expbottle"]		= 76,
 			["firework"]		= 77,
