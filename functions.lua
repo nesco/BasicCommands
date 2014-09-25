@@ -8,6 +8,9 @@ function GetBlockXYZFromTrace(Player)
 		return Tracer.BlockHitPosition.x, Tracer.BlockHitPosition.y, Tracer.BlockHitPosition.z
 end
 
+
+
+
 function Strike(Name)
 		if not Player:GetWorld():DoWithPlayer(Name,
 				function(Player)
@@ -19,6 +22,9 @@ function Strike(Name)
 			return true
 		end
 end
+
+
+
 
 function Throw(Player, ProjectileName, Speed)
 		local Direction = Player:GetThrowSpeed(speed)
@@ -49,6 +55,8 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 		
 		return true;
 end
+
+
 
 local ProjectileTable = 
 {
