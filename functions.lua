@@ -1,3 +1,21 @@
+local ProjectileTable = 
+{
+			["arrow"]		= 60,
+			["snowball"]		= 61,
+			["egg"]			= 62,
+			["fireball"]		= 63,
+			["firecharge"]		= 64,
+			["enderpearl"] 		= 65,
+			["skull"]		= 66,
+			["splashpotion"]	= 73,
+			["expbottle"]		= 76,
+			["firework"]		= 77,
+			["fishingfloat"]	= 90,
+}
+
+
+
+
 function GetBlockXYZFromTrace(Player)
 		local World = Player.GetWorld
 		local Tracer = cTracer(World)
@@ -7,7 +25,6 @@ function GetBlockXYZFromTrace(Player)
 		Tracer:Trace(EyePos, EyeVector, 50)
 		return Tracer.BlockHitPosition.x, Tracer.BlockHitPosition.y, Tracer.BlockHitPosition.z
 end
-
 
 
 
@@ -27,7 +44,7 @@ end
 
 
 function Throw(Player, ProjectileName, Speed)
-		local Direction = Player:GetThrowSpeed(speed)
+		local Direction = Player:GetThrowSpeed(Speed)
 		local Pos = Player:GetThrowStartPos()
 		local Item = cItem()
 		
@@ -57,18 +74,3 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 end
 
 
-
-local ProjectileTable = 
-{
-			["arrow"]		= 60,
-			["snowball"]		= 61,
-			["egg"]			= 62,
-			["fireball"]		= 63,
-			["firecharge"]		= 64,
-			["enderpearl"] 		= 65,
-			["skull"]		= 66,
-			["splashpotion"]	= 73,
-			["expbottle"]		= 76,
-			["firework"]		= 77,
-			["fishingfloat"]	= 90,
-}
