@@ -1,10 +1,10 @@
 function HandleLightningCommand(Split, Player)
 		if #Split == 1 then
-				Player.GetWorld():CastThunderbolt(GetBlockXYZFromTrace(Player))
+				Player:GetWorld():CastThunderbolt(GetBlockXYZFromTrace(Player))
 				return true
 		elseif #Split == 2 then
 				if Player:HasPermission("bc.lightning.forplayer") then
-						if not strike(Split[2]) then
+						if not Strike(Player, Split[2]) then
 							Player:SendMessage(cChatColor.Rose .. "Player couldn't be found.")
 							return true
 						end
@@ -17,4 +17,3 @@ function HandleLightningCommand(Split, Player)
 		Player:SendMessage(cChatColor.Blue .. "Lightning created!")
 		return true
 end
-					
