@@ -15,7 +15,7 @@ function HandleThrowCommand(Split, Player)
 		local Item = cItem()
 		local pos = Player:GetThrowStartPos()
 		local id = Player:GetWorld():CreateProjectile(pos.x, pos.y, pos.z, Projectile, Player, Item, direction)
-		return true;
+		return true
 end
 
 local ProjectileTable =
