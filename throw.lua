@@ -1,6 +1,6 @@
 function HandleThrowCommand(Split, Player)
 		if (Split[2] == nil) then
-				Player:SendMessage("Usage: " .. Split[1] .. " [arrow|egg|expbottle|fireball|firecharge|skull|snowball] ")
+				Player:SendMessage(cChatColor.Blue .. "Usage: " .. Split[1] .. " [arrow|egg|expbottle|fireball|firecharge|skull|snowball] ")
 				return true
 		end
 		
@@ -8,7 +8,7 @@ function HandleThrowCommand(Split, Player)
 		Id = Throw(Player, Split[2], 30)
 			
 		if (Id == false) then
-				Player:SendMessage("Usage: " .. Split[1] .. " [arrow|egg|expbottle|fireball|firecharge|skull|snowball] ")
+				Player:SendMessage(CChatColor.Blue .. "Usage: " .. Split[1] .. " [arrow|egg|expbottle|fireball|firecharge|skull|snowball] ")
 				return true
 		end
 		
