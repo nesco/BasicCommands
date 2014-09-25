@@ -21,12 +21,12 @@
  		              
  		        },
  		        
- 		        ["/thunderbolt"] =
+ 		        ["/lightning"] =
  		        {
- 		              Alias = "/strike",
- 		              Permission = "bc.thunderbolt",
+ 		              Alias = "/thunderbolt",
+ 		              Permission = "bc.lighting",
  		              Handler = HandleThunderboltCommand,
- 		              HelpString = " ~ Create a thunderbolt",
+ 		              HelpString = " ~ Create lightnings",
  		              
  		        },
  		        
