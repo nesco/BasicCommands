@@ -23,9 +23,9 @@
  		        
  		        ["/lightning"] =
  		        {
- 		              Alias = "/thunderbolt",
+ 		              Alias = "/lightning",
  		              Permission = "bc.lighting",
- 		              Handler = HandleThunderboltCommand,
+ 		              Handler = HandleLightningCommand,
  		              HelpString = " ~ Create lightnings",
  		              
  		        },
