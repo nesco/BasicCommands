@@ -52,13 +52,13 @@ end
 
 local ProjectileTable = 
 {
-			["arrow"]			= 60,
+			["arrow"]		= 60,
 			["snowball"]		= 61,
-			["egg"]				= 62,
+			["egg"]			= 62,
 			["fireball"]		= 63,
 			["firecharge"]		= 64,
 			["enderpearl"] 		= 65,
-			["skull"]			= 66
+			["skull"]		= 66
 			["splashpotion"]	= 73,
 			["expbottle"]		= 76,
 			["firework"]		= 77,
