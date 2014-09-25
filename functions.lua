@@ -17,20 +17,20 @@ local ProjectileTable =
 
 
 function GetBlockXYZFromTrace(Player)
-		local World = Player.GetWorld
+		local World = Player:GetWorld()
 		local Tracer = cTracer(World)
 		
 		local EyePos = Vector3f(Player:GetEyePosition().x, Player:GetEyePosition().y, Player:GetEyePosition().z)
-		local EyeVector = Vector3f(Player:GetLooVector().x, Player:GetLookVector().y, Player:GetLookVector().z)
+		local EyeVector = Vector3f(Player:GetLookVector().x, Player:GetLookVector().y, Player:GetLookVector().z)
 		Tracer:Trace(EyePos, EyeVector, 50)
 		return Tracer.BlockHitPosition.x, Tracer.BlockHitPosition.y, Tracer.BlockHitPosition.z
 end
 
 
 
-function Strike(Name)
+function Strike(Player, Name)
 		if not Player:GetWorld():DoWithPlayer(Name,
-				function(Player)
+				function(a_Player)
 						Player:GetWorld():CastThunderbolt(Player:GetPosX(), Player:GetPosY(), Player:GetPosZ())
 				end
 		) then
