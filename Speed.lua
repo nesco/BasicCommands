@@ -8,7 +8,7 @@ function HandleSpeedCommand(Split, Player)
 					return true
 					
 			elseif (#Split == 4) then
-					if not Player:GetWorld():DoWithPlayer(Split[2], SetMaxSpeed(a_Player, tonumber(Split[3], Split[4])
+					if not Player:GetWorld():DoWithPlayer(Split[2], SetMaxSpeed(a_Player, tonumber(Split[3]), Split[4])
 					) then
 								Player:SendMessage(cChatColor.Rose .. "Player couldn't be found.")
 								return true
