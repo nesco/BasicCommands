@@ -31,7 +31,7 @@ end
 function Strike(Name)
 		local exist = false
 		cRoot:Get():FindAndDoWithPlayer(Name,
-				function(a_Player)
+				function(Player)
 						exist = true
 						Player:GetWorld():CastThunderbolt(Player:GetPosX(), Player:GetPosY(), Player:GetPosZ())
 				end
