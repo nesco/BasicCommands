@@ -29,15 +29,15 @@ end
 
 
 function Strike(Player, Name)
-		if not Player:GetWorld():DoWithPlayer(Name,
+		local exist = false
+		cRoot:Get():FindAndDoWithPlayer(Name,
 				function(a_Player)
+						exist = true
 						Player:GetWorld():CastThunderbolt(Player:GetPosX(), Player:GetPosY(), Player:GetPosZ())
 				end
-		) then
-				return false
-		else
-			return true
-		end
+		)
+		
+		return exist
 end
 
 
