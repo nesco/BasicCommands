@@ -13,7 +13,8 @@ function Initialize(Plugin)
  	
  	-- Bind all the commands:
 	RegisterPluginInfoCommands();
- 		
+ 	 	
+ 	LOG("Initialized " .. Plugin:GetName() .. " v." .. Plugin:GetVersion())		
  	return true
 end
 
