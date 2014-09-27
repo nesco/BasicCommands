@@ -28,7 +28,7 @@ end
 
 
 
-function Strike(Player, Name)
+function Strike(Name)
 		local exist = false
 		cRoot:Get():FindAndDoWithPlayer(Name,
 				function(a_Player)
