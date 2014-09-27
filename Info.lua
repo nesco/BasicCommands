@@ -30,6 +30,15 @@
  		              
  		        },
  		        
+ 		        ["/speed"] =
+ 		        {
+ 		              Alias = "/celerity",
+ 		              Permission = "bc.speed",
+ 		              Handler = HandleSpeedCommand,
+ 		              HelpString = " ~ Change the speed of a player",
+ 		              
+ 		        },
+ 		        
  		        ["/kick-all"] =
  		        {
  		              Alias = "/kickall",
