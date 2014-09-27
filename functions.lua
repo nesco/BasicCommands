@@ -73,7 +73,7 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 		return true
 end
 
-function SetGlobalSpeed(Player, Celerity)
+function SetGlobalMaxSpeed(Player, Celerity)
 		Player:SetFlyingMaxSpeed(Celerity)
 		Player:SetNormalMaxSpeed(Celerity)
 		Player:SetSprintingMaxSpeed(Celerity*1.3)
