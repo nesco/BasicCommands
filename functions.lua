@@ -96,7 +96,7 @@ function SetMaxSpeed(Player, Celerity, Mode)
 				Player:SetSprintingMaxSpeed(Celerity * 1.3)
 				return true
 					
-		elseif (Mode == string.lower("global") or Mode == string.lower("all") then
+		elseif (Mode == string.lower("global") or Mode == string.lower("all")) then
 				SetGlobalMaxSpeed(Player, Celerity)
 				return true
 		end
