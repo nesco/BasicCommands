@@ -79,3 +79,27 @@ function SetGlobalMaxSpeed(Player, Celerity)
 		Player:SetSprintingMaxSpeed(Celerity*1.3)
 		return true
 end
+
+
+
+
+function SetMaxSpeed(Player, Celerity, Mode)
+		if (Mode == string.lower("flying")) then
+				Player:SetFlyingMaxSpeed(Celerity)
+				return true
+						
+		elseif (Mode == string.lower("normal") || Mode == string.lower("walking")) then
+				Player:SetNormalMaxSpeed(Celerity)
+				return true
+					
+		elseif (Mode == string.lower("sprinting") || Mode == string.lower("running")) then
+				Player:SetSprintingMaxSpeed(Celerity * 1.3)
+				return true
+					
+		elseif (Mode == string.lower("global") || Mode == string.lower("all") then
+				SetGlobalMaxSpeed(Player, Celerity)
+				return true
+		end
+		
+		return false
+end
