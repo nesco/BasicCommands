@@ -70,7 +70,12 @@ function ExecuteForEachPlayer(Player, CommandPrefix, CommandSuffix)
 		end
 		cRoot:Get():ForEachPlayer(ExecuteCommand)
 		
-		return true;
+		return true
 end
 
-
+function SetGlobalSpeed(Player, Celerity)
+		Player:SetFlyingMaxSpeed(Celerity)
+		Player:SetNormalMaxSpeed(Celerity)
+		Player:SetSprintingMaxSpeed(Celerity*1.3)
+		return true
+end
